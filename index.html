@@ -12,7 +12,7 @@
     
     var numberOfClicks=0;
     
-    function aframe()
+    function sayHello()
       {
         alert("Hello!");
               
@@ -35,7 +35,7 @@
        	</a-camera>
        </a-entity>
       
-      <a-box onclick="alertUser(this);" id="parentBox" visible="true" position="-2 3 -5" rotation="0 45 0" color="#4CC3D9" shadow>
+      <a-box onclick="sayHello(); alertUser(this);" id="parentBox" visible="true" position="-2 3 -5" rotation="0 45 0" color="#4CC3D9" shadow>
         <a-box id="childBox" visible="true" position="0 0 0" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
       </a-box>
      <a-sphere onclick="alertUser(this);" position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
